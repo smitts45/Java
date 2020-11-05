@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="group1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Mavenp.Maven2.NewTest3Extent">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Mavenp.Maven2.NewTest3Extent -->
+      <class name="Mavenp.Maven2.NewTest1">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Mavenp.Maven2.NewTest1 -->
+    </classes>
+  </test> <!-- group1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
